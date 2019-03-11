@@ -1,0 +1,96 @@
+body {
+  padding-top: 77px;
+  font-size: 18px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.navbar {
+  font-size: 30px;
+  background: linear-gradient(74deg, #6a89cc, #95aedb);
+}
+
+#myBtn {
+  right: 0;
+  color: white;
+  background-color: inherit;
+}
+
+#myBtn:hover {
+  color: white;
+}
+
+i {
+  color: white;
+}
+
+#card {
+  height: 900px;
+}
+
+.card-img-top {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  margin-top: 80px;
+  color: black;
+  background: linear-gradient(74deg, #6a89cc, #95aedb);
+}
+
+.footer {
+  padding-top: 15px;
+}
+
+.card {
+  margin-top: 75px;
+}
+
+.fa-gamepad {
+  font-size: 50px;
+  color: white;
+}
+
+.fa-minus-circle {
+  color: red;
+  font-size: 23px;
+}
+
+.fa-plus-circle {
+  color: green;
+  font-size: 23px;
+}
+
+.footerProduct {
+  color: black;
+}
+
+.logoFooter {
+  height: 150px;
+}
+
+.btn-add {
+  background: #4b6584;
+}
+
+.fa-euro-sign,
+.fa-window-close {
+  color: #4b6584;
+  font-size: 25px;
+}
+
+#buyButton {
+  background-color: yellow;
+  font-size: 30px;
+}
+
+#closeButton {
+  background-color: red;
+  font-size: 30px;
+}
+
+#banner {
+  width: 100%;
+}

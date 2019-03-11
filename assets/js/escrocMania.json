@@ -1,0 +1,144 @@
+[{
+    "name": "The Division 2",
+    "image": "assets/img/the-division-2.jpg",
+    "desc": "Dans Tom Clancy’s The Division 2, le destin du monde libre est en jeu. Menez une équipe d’agents d’élite à travers les rues d’un Washington DC dévasté pas la pandémie et tentez de rétablir l’ordre afin d’empêcher l’effondrement de la ville.",
+    "price": 39.99,
+    "ref": "125.066.158",
+    "category": "PC"
+  },
+
+  {
+    "name": "DiRT Rally 2.0 Day One Edition",
+    "image": "assets/img/dirt-rally.jpg",
+    "desc": "DiRT Rally 2.0 vous invite à arpenter les circuits de rallye les plus emblématiques du globe, dans les véhicules tout-terrain les plus puissants jamais conçus. Mais n'oubliez pas que la moindre erreur peut mettre fin à votre étape.",
+    "price": 30.49,
+    "ref": "125.068.558",
+    "category": "PC"
+  },
+
+  {
+    "name": "Farming Simulator 19",
+    "image": "assets/img/farming-simulator.jpg",
+    "desc": "La franchise plusieurs fois millionnaire fait en 2018 un bond de géant, avec une refonte complète et une révision totale de son moteur graphique. La simulation agricole ultime se pare ainsi cette année de visuels et d'effets saisissants de réalisme, tout en offrant l'expérience de jeu farming la plus riche et complète jamais réalisée.",
+    "price": 26.86,
+    "ref": "125.269.558",
+    "category": "PC"
+  },
+
+  {
+    "name": "Call of Duty: Modern Warfare 2",
+    "image": "assets/img/call-of.jpg",
+    "desc": "Call of Duty®: Modern Warfare 2 comprend, pour la première fois dans un jeu vidéo, une bande originale composée par le légendaire Hans Zimmer, récompensé par des Academy Award®, Golden Globe® Award, Grammy® Award et Tony Award. Le titre prolonge l'aventure du premier opus Call of Duty® 4: Modern Warfare®, le titre récompensé de manière planétaire ",
+    "price": 5.04,
+    "ref": "125.693.444",
+    "category": "PC"
+  },
+
+  {
+    "name": "Fortnite Deep Freeze",
+    "image": "assets/img/fortnite.jpg",
+    "desc": "The Fortnite Deep Freeze Bundle will include: Frostbite Outfit, Cold Front Glider, Chill-Axe Pickaxe, Freezing Point Back Bling, 1.000 V-Bucks",
+    "price": 16.06,
+    "ref": "125.586.128",
+    "category": "PS4"
+  },
+
+  {
+    "name": "WRC 8 version fer (comme Simon sur lol)",
+    "image": "assets/img/wrc.jpg",
+    "desc": "Le championnat WRC est la compétition automobile la plus difficile et imprévisible au monde. Pilotes, co-pilotes, et staffs techniques doivent s’adapter en permanence pour tirer le meilleur de leurs voitures et être les plus rapides sur tous les types de surfaces, quelles que soit les conditions météos, de jour comme de nuit.",
+    "price": 1.99,
+    "ref": "125.325.128",
+    "category": "PS4"
+  },
+
+  {
+    "name": "Apex Legends: 2150 Apex Coins",
+    "image": "assets/img/apex.jpg",
+    "desc": "Apex est un bon jeu de noob comme Theo.",
+    "price": 0.01,
+    "ref": "128.554.128",
+    "category": "PS4"
+  },
+
+  {
+    "name": "Pro Evolution Soccer 1998",
+    "image": "assets/img/pes.jpg",
+    "desc": "tres bon jeu videal",
+    "price": 99.00,
+    "ref": "128.514.128",
+    "category": "PS4"
+  },
+
+  {
+    "name": "Super Smash Bros. Ultimate Switch",
+    "image": "assets/img/supersmashbros.jpg",
+    "desc": "Des mondes de jeux et des combattants légendaires se retrouvent pour l’affrontement ultime dans le nouvel opus de la série Super Smash Bros. sur Nintendo Switch !",
+    "price": 54.99,
+    "ref": "125.066.158",
+    "category": "SWITCH"
+  },
+
+  {
+    "name": "Pokémon: Let's Go, Pikachu! Switch",
+    "image": "assets/img/pokemonpikachu.jpg",
+    "desc": "Un nouveau jeu de rôle Pokémon débarque sur Nintendo Switch ! Pokémon : Let's Go, Pikachu et Pokémon : Let's Go, Évoli vous permettent de découvrir un grand RPG Pokémon classique de la série sous un nouveau jour sur Nintendo Switch.",
+    "price": 47.99,
+    "ref": "125.068.558",
+    "category": "SWITCH"
+  },
+
+  {
+    "name": "The Legend of Zelda: Breath of the Wild Switch",
+    "image": "assets/img/zelda.jpg",
+    "desc": "Après un sommeil de plus d'un siècle, Link se réveille seul dans un monde qu'il ne reconnaît pas. Le héros légendaire va désormais devoir explorer un territoire vaste et dangereux et retrouver la mémoire avant qu'Hyrule ne soit perdu à jamais. ",
+    "price": 54.99,
+    "ref": "125.269.558",
+    "category": "SWITCH"
+  },
+
+  {
+    "name": "Kirby Star Allies Switch",
+    "image": "assets/img/kirby.jpg",
+    "desc": "Faites équipe avec vos amis dans Kirby Star Allies, un jeu de plateforme et d'aventure, en exclusivité sur Nintendo Switch ! ",
+    "price": 47.99,
+    "ref": "125.693.444",
+    "category": "SWITCH"
+  },
+
+  {
+    "name": "Forza Horizon 4",
+    "image": "assets/img/forza.jpg",
+    "desc": "Les saisons dynamiques changent tout sur le plus grand festival automobile au monde. En solo ou en équipe, explorez les magnifiques paysages du Royaume-Uni historique dans un monde ouvert partagé.",
+    "price": 34.99,
+    "ref": "125.586.128",
+    "category": "XBOX One"
+  },
+
+  {
+    "name": "FIFA 19",
+    "image": "assets/img/fifa19.jpg",
+    "desc": "Optimisé par Frostbite, EA SPORTS FIFA 19 propose une expérience digne des plus grands champions sur et à côté du terrain.",
+    "price": 32.99,
+    "ref": "125.325.128",
+    "category": "XBOX One"
+  },
+
+  {
+    "name": "Red Dead Redemption 2",
+    "image": "assets/img/reddead.jpg",
+    "desc": "Développé par les créateurs de Grand Theft Auto V et Red Dead Redemption, Red Dead Redemption 2 raconte une histoire épique au cœur des terres sauvages et impitoyables des États-Unis.",
+    "price": 49.99,
+    "ref": "128.554.128",
+    "category": "XBOX One"
+  },
+
+  {
+    "name": "Far Cry New Dawn Deluxe Edition",
+    "image": "assets/img/farcry.jpg",
+    "desc": "Avec l'édition Deluxe, recevez le pack Digital Deluxe incluant :le pack Hurk Legacy, le pack Knight",
+    "price": 42.99,
+    "ref": "128.514.128",
+    "category": "XBOX One"
+  }
+]

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+  <title>eMania</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"  />
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+  <link rel="stylesheet" href="assets/css/escrocMania.css" />
+</head>
+<body ng-app="basketApp" ng-controller="displayContent">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top animated bounceInRight delay-0s">
+    <a class="navbar-brand" href="#"><i class="fas fa-gamepad"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#PC">PC</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#PS4">PS4</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#SWITCH">SWITCH</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#XBOX One" ng-click="showXBOX($index)">XBOX</a>
+        </li>
+        <li class="nav-item">
+          <button href="#basket" type="button" class="btn grey" id="myBtn" data-toggle="modal"><span class="fas fa-shopping-cart fa-2x"></span></button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- DÉBUT PRESENTATION eMania -->
+  <div class="row" >
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div id="presentation" class="animated bounceInLeft delay-0s">
+        <img class="logo img-fluid" src="assets/img/banner.png" id="banner">
+      </div>
+    </div>
+  </div>
+  <!-- FIN PRESENTATION eMania -->
+  <!-- Panier modale -->
+  <div class="container">
+    <div class="modal" tabindex="-1" role="dialog" id="basket">
+      <div class="modal-dialog animated rollIn faster" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title">Mon Panier</h1>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div id="infoArticles" ng-repeat="product in basketContent">
+            <h2 class="text-center">{{product.gameName}}</h2>
+            <img src="{{product.gameImg}}" alt="image de l'article" class="imageArticle rounded mx-auto d-block">
+            <p class="text-center mt-1">Ref : {{product.gameRef}}</p>
+            <p class="text-center mt-1">Prix produit(s) : {{product.gameQty * product.gamePrice | number : 2 }} €</p>
+            <div>
+              <p class="text-center mt-1">
+                <button type="button" name="decrease" class="btn" ng-click="decreaseQty($index)">
+                  <i class="fas fa-minus-circle"></i>
+                </button>
+                Quantité : {{product.gameQty}}
+                <button type="button" name="increase" class="btn" ng-click="increaseQty($index)">
+                  <i class="fas fa-plus-circle"></i>
+                </button>
+              </p>
+            </div>
+            <button type="button" name="remove" ng-click="remove($index)">Retirer du panier</button>
+            <div class="modal-footer">
+              <p id="total">Prix Total : {{total | number : 2}} €</p>
+            </div>
+          </div>
+          <button type="button" class="btn  bg-light" data-dismiss="modal" id="closeButton">
+            <i class="fas fa-window-close"></i> Fermer
+          </button>
+          <button type="button" class="btn  bg-light" id="buyButton">
+            <i class="fas fa-euro-sign"></i> Acheter
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- /Panier modale -->
+    <!-- Card produit -->
+    <div class="row" data-aos="zoom-in" data-aos-duration="750" data-aos-easing="ease-in-out-cubic">
+      <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12" ng-repeat="eMania in eManiaContent">
+        <div class="card-deck" id="{{eMania.category}}">
+          <div class="card" id="card">
+            <img src="{{eMania.image}}" class="card-img-top" alt="{{eMania.name}}">
+            <div class="card-body">
+              <h3 class="card-title"> {{eMania.name}} </h3>
+              <p class="card-text">{{eMania.desc}}</p>
+              <p class="card-text">{{eMania.price | number : 2}}€</p>
+            </div>
+              <div class="card-footer d-flex align-items-stretch">
+                <button type="button" id="#addBasket" name="addBasket"  ng-click="addBasket($index)" class="btn-add btn btn-secondary">Ajouter au panier</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Card produit -->
+    <!--  Footer -->
+  </div>
+  <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+          <h3 class="font-weight-bold text-uppercase mb-4">A PROPOS</h3>
+          <p>eMania, spécialiste du jeu vidéo & des produits dérivés en magasin et en ligne.</p>
+          <p>Le plus grand nombre de références en France et au meilleur prix.</p>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+          <h3 class="font-weight-bold text-uppercase mb-4">CATALOGUE</h3>
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <i class="fab fa-playstation"></i><a href="#!" class="footerProduct"> Playstation 4</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <i class="fab fa-xbox"></i><a href="#!" class="footerProduct"> Xbox One</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <i class="fab fa-nintendo-switch"></i><a href="#!" class="footerProduct"> Nintendo Switch</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-desktop"></i><a href="#!" class="footerProduct"> Pc</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+          <h3 class="font-weight-bold text-uppercase mb-4">Adresse</h3>
+          <ul class="list-unstyled">
+            <li>
+              <p><i class="fas fa-home mr-3"></i>64 Rue de Caumartin, Paris</p>
+            </li>
+            <li>
+              <p><i class="fas fa-envelope mr-3"></i>eMania@gmail.com</p>
+            </li>
+            <li>
+              <p><i class="fas fa-phone mr-3"></i>01 45 96 35 36</p>
+            </li>
+            <li>
+              <p><i class="fas fa-print mr-3"></i>01 30 38 26 33</p>
+            </li>
+          </ul>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+          <h3 class="font-weight-bold text-uppercase mb-4">Nous suivre</h3>
+          <a type="button" class="btn-floating btn-fb">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a type="button" class="btn-floating btn-tw">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a type="button" class="btn-floating btn-gplus">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+          <a type="button" class="btn-floating btn-dribbble">
+            <i class="fab fa-dribbble"></i>
+          </a>
+          <img src="assets/img/emania.png" alt="emania footer logo" class="logoFooter">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+  <script src="assets/js/escrocMania.js"></script>
+</body>
+</html>
